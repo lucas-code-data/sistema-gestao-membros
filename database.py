@@ -6,5 +6,3 @@ conexao = mysql.connector.connect(
     password = 'SUA SENHA AQUI',
     database = 'sistema_gestao',
 )
-
-cursor = conexao.cursor()
