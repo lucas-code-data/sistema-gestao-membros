@@ -7,10 +7,12 @@ print(f'{"GESTÃO DE COLABORADORES":^40}')
 print('=' * 60)
 while True:
     print('''1. Cadastrar novo colaborador
-2. Listar todos os colaborador cadastrados
+2. Listar todos os colaboradores cadastrados
 3. Buscar colaborador por ID
 4. Estatisticas do sistema
-5. Encerrar programa''')
+5. Editar colaborador
+6. Excluir colaborador
+7. Encerrar o sistema''')
     print('=' * 60)
     escolha_usuario = input('Opção desejada: ').strip()
     print('=' * 60)
@@ -23,6 +25,10 @@ while True:
     elif escolha_usuario == '4':
         estatisticas.relatorio()
     elif escolha_usuario == '5':
+        membros.editar()
+    elif escolha_usuario == '6':
+        membros.excluir()
+    elif escolha_usuario == '7':
         print('ENCERRANDO...')
         sleep(1)
         print('SISTEMA ENCERRADO COM SUCESSO!')
